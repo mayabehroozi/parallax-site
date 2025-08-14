@@ -1,17 +1,17 @@
 const images = [
   {
-    url: "assets/img/1web.WEBP",
-    thumb: "assets/img/1icon.WEBP",
+    url: "assets/img/1web.webp",
+    thumb: "assets/img/1icon.webp",
    
   },
   {
-    url: "assets/img/2web.WEBP",
-    thumb: "assets/img/2icon.WEBP",
+    url: "assets/img/2web.webp",
+    thumb: "assets/img/2icon.webp",
     
   },
   {
-    url: "assets/img/3web.WEBP",
-    thumb: "assets/img/3icon.WEBP",
+    url: "assets/img/3web.webp",
+    thumb: "assets/img/3icon.webp",
    
   }
 ];
