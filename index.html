@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/output.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+    <body>
+        <!-- headerrrr////////////////////////////////// -->
+        <!-- 🔷 Navbar موبایل -->
+
+        <div style="padding-left:1rem; padding-right:1rem"
+            class="fixed top-0 inset-x-0 bg-[#C6805E] z-50 flex items-center justify-between px-4 py-2 h-12 md:hidden">
+            <!-- لوگو -->
+            <div>
+                <svg role="img" aria-label="Logo" class="header-logo-inner" xmlns="http://www.w3.org/2000/svg"
+                    width="60" height="45" viewBox="0 0 80 65" fill="none">
+                    <path
+                        d="M62.5248 62.5C61.6441 62.5 60.9415 62.2992 60.417 61.8975C59.8989 61.4893 59.5946 60.916 59.5039 60.1774H60.7181C60.7764 60.605 60.9674 60.9386 61.2912 61.1784C61.615 61.4116 62.0392 61.5282 62.5637 61.5282C62.9976 61.5282 63.3278 61.4505 63.5545 61.295C63.7876 61.133 63.9042 60.9095 63.9042 60.6244C63.9042 60.3717 63.8329 60.1676 63.6905 60.0122C63.548 59.8567 63.3084 59.7303 62.9717 59.6331L61.7089 59.2541C61.0678 59.0598 60.5951 58.8038 60.2907 58.4864C59.9928 58.1689 59.8439 57.7705 59.8439 57.291C59.8439 56.8893 59.9475 56.5395 60.1547 56.2414C60.3619 55.9434 60.6534 55.7134 61.0289 55.5514C61.411 55.3895 61.8546 55.3085 62.3597 55.3085C63.1368 55.3085 63.7552 55.4996 64.215 55.8819C64.6813 56.2576 64.9468 56.7695 65.0115 57.4174H63.7973C63.7261 57.0286 63.5642 56.7435 63.3117 56.5621C63.0591 56.3743 62.7191 56.2803 62.2917 56.2803C61.9161 56.2803 61.6182 56.3548 61.3981 56.5038C61.1779 56.6528 61.0678 56.8569 61.0678 57.1161C61.0678 57.3299 61.1326 57.5113 61.2621 57.6603C61.3981 57.8093 61.6474 57.9389 62.01 58.049L63.2922 58.4378C63.9333 58.6257 64.3996 58.8816 64.691 59.2055C64.9824 59.5295 65.1281 59.9409 65.1281 60.4398C65.1281 61.1006 64.8982 61.6092 64.4384 61.9655C63.9851 62.3219 63.3473 62.5 62.5248 62.5Z"
+                        fill="white"></path>
+                    <path d="M51.5205 62.4126V55.4154H52.7833V62.4126H51.5205Z" fill="white"></path>
+                    <path
+                        d="M39.2129 62.4126V55.4154H42.1658C42.6645 55.4154 43.0983 55.4996 43.4675 55.6681C43.8366 55.8365 44.1183 56.073 44.3125 56.3775C44.5133 56.682 44.6137 57.0384 44.6137 57.4465C44.6137 57.8482 44.5133 58.2013 44.3125 58.5058C44.1183 58.8103 43.8366 59.0468 43.4675 59.2153C43.0983 59.3837 42.6645 59.468 42.1658 59.468H40.2037V58.5058H42.127C42.5349 58.5058 42.8458 58.4119 43.0595 58.224C43.2797 58.0361 43.3898 57.777 43.3898 57.4465C43.3898 57.1161 43.2829 56.8634 43.0692 56.6885C42.8555 56.5071 42.5414 56.4164 42.127 56.4164H40.4757V62.4126H39.2129ZM43.2149 62.4126L40.0968 58.8363H41.515L44.9634 62.4126H43.2149Z"
+                        fill="white"></path>
+                    <path
+                        d="M26.1016 62.4126L28.6757 55.4154H29.7636L27.3449 62.4126H26.1016ZM31.3761 62.4126L28.9671 55.4154H30.1133L32.6777 62.4126H31.3761ZM27.4323 59.6623H31.2595V60.673H27.4323V59.6623Z"
+                        fill="white"></path>
+                    <path
+                        d="M14.9219 62.4126V55.4154H18.0594C18.571 55.4154 19.0081 55.5029 19.3707 55.6778C19.7398 55.8527 20.0215 56.0989 20.2158 56.4164C20.4166 56.7339 20.5169 57.1096 20.5169 57.5437C20.5169 57.9713 20.4166 58.3471 20.2158 58.6711C20.0151 58.995 19.7334 59.2477 19.3707 59.4291C19.0081 59.604 18.571 59.6915 18.0594 59.6915H15.903V58.7002H18.0011C18.4026 58.7002 18.7102 58.5965 18.9239 58.3892C19.1441 58.1819 19.2542 57.9001 19.2542 57.5437C19.2542 57.1939 19.1441 56.9185 18.9239 56.7177C18.7102 56.5168 18.4026 56.4164 18.0011 56.4164H16.1846V62.4126H14.9219Z"
+                        fill="white"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 7.79852C27.9384 -10.6962 25.1433 25.3673 19.4295 42.7148C30.0203 27.9936 40.9162 9.39643 58.841 2.90647C66.8511 -0.137745 81.2923 -2.96071 79.9071 6.41777C79.6556 8.11401 78.9342 9.69962 77.9324 11.0927C71.761 19.6763 57.9752 28.7803 47.8379 27.1045C56.4994 23.794 67.0489 17.2876 72.1403 8.72039C74.5066 2.94744 69.7203 2.52543 64.6249 3.42682C58.4782 4.51667 52.8138 7.3929 48.1018 11.4696C41.5057 17.1811 35.5198 24.2324 30.0657 30.8657C23.8736 37.9293 20.5879 47.6683 10.632 48.75C12.3923 39.2814 26.5491 0.669402 6.12609 5.22139"
+                        fill="white"></path>
+                </svg>
+            </div>
+
+            <!-- دکمه همبرگر -->
+            <button id="hamburgerBtn"
+                class="flex flex-col items-center justify-center gap-[5px] h-10 text-white text-2xl font-bold select-none relative z-50">
+                <span class="hamburgerLines flex flex-col gap-[5px]">
+                    <span class="block w-6 h-0.5 bg-white"></span>
+                    <span class="block w-6 h-0.5 bg-white"></span>
+                    <span class="block w-6 h-0.5 bg-white"></span>
+                </span>
+                <span class="closeIcon hidden">×</span>
+            </button>
+        </div>
+
+        <!-- منوی موبایل -->
+        <div id="mobileMenu"
+            class="fixed top-12 inset-x-0 bg-[#C6805E] z-40 transform -translate-y-full opacity-0 transition-all duration-300 ease-in-out flex flex-col gap-4 px-4 py-6 text-white text-center">
+            <a href="#">Des bijoux de créateur</a>
+            <a href="#">Mes univers de création</a>
+            <a href="#">L’atelier</a>
+            <a href="#">Véronique</a>
+        </div>
+
+        <!-- 🔷 Navbar دسکتاپ -->
+        <nav
+            class="hidden md:flex items-center justify-center gap-16 text-white uppercase tracking-wider   bg-[#C6805E]">
+            <svg role="img" aria-label="Logo" class="header-logo-inner" xmlns="http://www.w3.org/2000/svg" width="60"
+                height="45" viewBox="0 0 80 65" fill="none">
+                <path
+                    d="M62.5248 62.5C61.6441 62.5 60.9415 62.2992 60.417 61.8975C59.8989 61.4893 59.5946 60.916 59.5039 60.1774H60.7181C60.7764 60.605 60.9674 60.9386 61.2912 61.1784C61.615 61.4116 62.0392 61.5282 62.5637 61.5282C62.9976 61.5282 63.3278 61.4505 63.5545 61.295C63.7876 61.133 63.9042 60.9095 63.9042 60.6244C63.9042 60.3717 63.8329 60.1676 63.6905 60.0122C63.548 59.8567 63.3084 59.7303 62.9717 59.6331L61.7089 59.2541C61.0678 59.0598 60.5951 58.8038 60.2907 58.4864C59.9928 58.1689 59.8439 57.7705 59.8439 57.291C59.8439 56.8893 59.9475 56.5395 60.1547 56.2414C60.3619 55.9434 60.6534 55.7134 61.0289 55.5514C61.411 55.3895 61.8546 55.3085 62.3597 55.3085C63.1368 55.3085 63.7552 55.4996 64.215 55.8819C64.6813 56.2576 64.9468 56.7695 65.0115 57.4174H63.7973C63.7261 57.0286 63.5642 56.7435 63.3117 56.5621C63.0591 56.3743 62.7191 56.2803 62.2917 56.2803C61.9161 56.2803 61.6182 56.3548 61.3981 56.5038C61.1779 56.6528 61.0678 56.8569 61.0678 57.1161C61.0678 57.3299 61.1326 57.5113 61.2621 57.6603C61.3981 57.8093 61.6474 57.9389 62.01 58.049L63.2922 58.4378C63.9333 58.6257 64.3996 58.8816 64.691 59.2055C64.9824 59.5295 65.1281 59.9409 65.1281 60.4398C65.1281 61.1006 64.8982 61.6092 64.4384 61.9655C63.9851 62.3219 63.3473 62.5 62.5248 62.5Z"
+                    fill="white"></path>
+                <path d="M51.5205 62.4126V55.4154H52.7833V62.4126H51.5205Z" fill="white"></path>
+                <path
+                    d="M39.2129 62.4126V55.4154H42.1658C42.6645 55.4154 43.0983 55.4996 43.4675 55.6681C43.8366 55.8365 44.1183 56.073 44.3125 56.3775C44.5133 56.682 44.6137 57.0384 44.6137 57.4465C44.6137 57.8482 44.5133 58.2013 44.3125 58.5058C44.1183 58.8103 43.8366 59.0468 43.4675 59.2153C43.0983 59.3837 42.6645 59.468 42.1658 59.468H40.2037V58.5058H42.127C42.5349 58.5058 42.8458 58.4119 43.0595 58.224C43.2797 58.0361 43.3898 57.777 43.3898 57.4465C43.3898 57.1161 43.2829 56.8634 43.0692 56.6885C42.8555 56.5071 42.5414 56.4164 42.127 56.4164H40.4757V62.4126H39.2129ZM43.2149 62.4126L40.0968 58.8363H41.515L44.9634 62.4126H43.2149Z"
+                    fill="white"></path>
+                <path
+                    d="M26.1016 62.4126L28.6757 55.4154H29.7636L27.3449 62.4126H26.1016ZM31.3761 62.4126L28.9671 55.4154H30.1133L32.6777 62.4126H31.3761ZM27.4323 59.6623H31.2595V60.673H27.4323V59.6623Z"
+                    fill="white"></path>
+                <path
+                    d="M14.9219 62.4126V55.4154H18.0594C18.571 55.4154 19.0081 55.5029 19.3707 55.6778C19.7398 55.8527 20.0215 56.0989 20.2158 56.4164C20.4166 56.7339 20.5169 57.1096 20.5169 57.5437C20.5169 57.9713 20.4166 58.3471 20.2158 58.6711C20.0151 58.995 19.7334 59.2477 19.3707 59.4291C19.0081 59.604 18.571 59.6915 18.0594 59.6915H15.903V58.7002H18.0011C18.4026 58.7002 18.7102 58.5965 18.9239 58.3892C19.1441 58.1819 19.2542 57.9001 19.2542 57.5437C19.2542 57.1939 19.1441 56.9185 18.9239 56.7177C18.7102 56.5168 18.4026 56.4164 18.0011 56.4164H16.1846V62.4126H14.9219Z"
+                    fill="white"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 7.79852C27.9384 -10.6962 25.1433 25.3673 19.4295 42.7148C30.0203 27.9936 40.9162 9.39643 58.841 2.90647C66.8511 -0.137745 81.2923 -2.96071 79.9071 6.41777C79.6556 8.11401 78.9342 9.69962 77.9324 11.0927C71.761 19.6763 57.9752 28.7803 47.8379 27.1045C56.4994 23.794 67.0489 17.2876 72.1403 8.72039C74.5066 2.94744 69.7203 2.52543 64.6249 3.42682C58.4782 4.51667 52.8138 7.3929 48.1018 11.4696C41.5057 17.1811 35.5198 24.2324 30.0657 30.8657C23.8736 37.9293 20.5879 47.6683 10.632 48.75C12.3923 39.2814 26.5491 0.669402 6.12609 5.22139"
+                    fill="white"></path>
+            </svg>
+
+            <!-- منو -->
+            <div class="flex gap-8 text-xs">
+                <a href="#">Des bijoux de créateur</a>
+                <a href="#">Mes univers de création</a>
+                <a href="#">L’atelier</a>
+                <a href="#">Véronique</a>
+            </div>
+            <!-- دکمه -->
+            <a href="#"
+                class="bg-white text-black px-4 py-2 rounded-full text-xs font-semibold uppercase hover:bg-gray-200 transition">
+                Venez à la boutique
+            </a>
+        </nav>
+
+        </nav>
+
+
+
+
+        <!-- 🔳 کروسل فول اسکرین -->
+        <div id="carousel"
+            class="w-full h-screen bg-slide flex items-center justify-center text-white text-4xl font-bold"></div>
+
+        <!-- 🔳 تصاویر کوچک سمت چپ (فقط در دسکتاپ) -->
+        <div id="thumbnails" class="hidden md:flex flex-col gap-2 absolute left-4 top-1/2 -translate-y-1/2 z-10"></div>
+        <div
+            class="absolute bottom-4 left-1/2 translate-x-[-50%] text-[18px] md:text-[35px] text-white italianno-regular md:translate-x-0 md:left-auto md:right-9 md:bottom-5 md:text-left z-20">
+            <p class="hidden md:block">
+                Chez un<br>
+                joaillier créateur : du<br>
+                sur-mesure pour vous
+            </p>
+            <p class="block md:hidden text-center w-full">
+                Chez un<br>
+                joaillier créateur : du<br>
+                sur-mesure pour vous
+            </p>
+        </div>
+        </div>
+        <!-- ////////////////////// -->
+
+        <!-- end-of---header///// -->
+        <!-- ////////////2nd-box//// -->
+        <div class="w-full min-h-[100vh] bg-[#C6805E] flex flex-wrap justify-center">
+            <div class=" w-[90%] min-md:h-[30vh] flex items-center  ">
+                <h1 class="w-5/6 text-7xl text-amber-50 overflow-y-hidden">Des pièces <span
+                        class="italianno-regular text-[#384048]">créées</span> pour <span
+                        class="text-[#384048] italianno-regular">vous</span></h1>
+                <div class="hidden md:flex w-1/6  pl-9  ">
+                    <svg role="img" aria-label="Logo" class="header-logo-inner" xmlns="http://www.w3.org/2000/svg"
+                        width="100" height="75" viewBox="0 0 80 65" fill="#384048">
+                        <path
+                            d="M62.5248 62.5C61.6441 62.5 60.9415 62.2992 60.417 61.8975C59.8989 61.4893 59.5946 60.916 59.5039 60.1774H60.7181C60.7764 60.605 60.9674 60.9386 61.2912 61.1784C61.615 61.4116 62.0392 61.5282 62.5637 61.5282C62.9976 61.5282 63.3278 61.4505 63.5545 61.295C63.7876 61.133 63.9042 60.9095 63.9042 60.6244C63.9042 60.3717 63.8329 60.1676 63.6905 60.0122C63.548 59.8567 63.3084 59.7303 62.9717 59.6331L61.7089 59.2541C61.0678 59.0598 60.5951 58.8038 60.2907 58.4864C59.9928 58.1689 59.8439 57.7705 59.8439 57.291C59.8439 56.8893 59.9475 56.5395 60.1547 56.2414C60.3619 55.9434 60.6534 55.7134 61.0289 55.5514C61.411 55.3895 61.8546 55.3085 62.3597 55.3085C63.1368 55.3085 63.7552 55.4996 64.215 55.8819C64.6813 56.2576 64.9468 56.7695 65.0115 57.4174H63.7973C63.7261 57.0286 63.5642 56.7435 63.3117 56.5621C63.0591 56.3743 62.7191 56.2803 62.2917 56.2803C61.9161 56.2803 61.6182 56.3548 61.3981 56.5038C61.1779 56.6528 61.0678 56.8569 61.0678 57.1161C61.0678 57.3299 61.1326 57.5113 61.2621 57.6603C61.3981 57.8093 61.6474 57.9389 62.01 58.049L63.2922 58.4378C63.9333 58.6257 64.3996 58.8816 64.691 59.2055C64.9824 59.5295 65.1281 59.9409 65.1281 60.4398C65.1281 61.1006 64.8982 61.6092 64.4384 61.9655C63.9851 62.3219 63.3473 62.5 62.5248 62.5Z">
+                        </path>
+                        <path d="M51.5205 62.4126V55.4154H52.7833V62.4126H51.5205Z"></path>
+                        <path
+                            d="M39.2129 62.4126V55.4154H42.1658C42.6645 55.4154 43.0983 55.4996 43.4675 55.6681C43.8366 55.8365 44.1183 56.073 44.3125 56.3775C44.5133 56.682 44.6137 57.0384 44.6137 57.4465C44.6137 57.8482 44.5133 58.2013 44.3125 58.5058C44.1183 58.8103 43.8366 59.0468 43.4675 59.2153C43.0983 59.3837 42.6645 59.468 42.1658 59.468H40.2037V58.5058H42.127C42.5349 58.5058 42.8458 58.4119 43.0595 58.224C43.2797 58.0361 43.3898 57.777 43.3898 57.4465C43.3898 57.1161 43.2829 56.8634 43.0692 56.6885C42.8555 56.5071 42.5414 56.4164 42.127 56.4164H40.4757V62.4126H39.2129ZM43.2149 62.4126L40.0968 58.8363H41.515L44.9634 62.4126H43.2149Z">
+                        </path>
+                        <path
+                            d="M26.1016 62.4126L28.6757 55.4154H29.7636L27.3449 62.4126H26.1016ZM31.3761 62.4126L28.9671 55.4154H30.1133L32.6777 62.4126H31.3761ZM27.4323 59.6623H31.2595V60.673H27.4323V59.6623Z">
+                        </path>
+                        <path
+                            d="M14.9219 62.4126V55.4154H18.0594C18.571 55.4154 19.0081 55.5029 19.3707 55.6778C19.7398 55.8527 20.0215 56.0989 20.2158 56.4164C20.4166 56.7339 20.5169 57.1096 20.5169 57.5437C20.5169 57.9713 20.4166 58.3471 20.2158 58.6711C20.0151 58.995 19.7334 59.2477 19.3707 59.4291C19.0081 59.604 18.571 59.6915 18.0594 59.6915H15.903V58.7002H18.0011C18.4026 58.7002 18.7102 58.5965 18.9239 58.3892C19.1441 58.1819 19.2542 57.9001 19.2542 57.5437C19.2542 57.1939 19.1441 56.9185 18.9239 56.7177C18.7102 56.5168 18.4026 56.4164 18.0011 56.4164H16.1846V62.4126H14.9219Z">
+                        </path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 7.79852C27.9384 -10.6962 25.1433 25.3673 19.4295 42.7148C30.0203 27.9936 40.9162 9.39643 58.841 2.90647C66.8511 -0.137745 81.2923 -2.96071 79.9071 6.41777C79.6556 8.11401 78.9342 9.69962 77.9324 11.0927C71.761 19.6763 57.9752 28.7803 47.8379 27.1045C56.4994 23.794 67.0489 17.2876 72.1403 8.72039C74.5066 2.94744 69.7203 2.52543 64.6249 3.42682C58.4782 4.51667 52.8138 7.3929 48.1018 11.4696C41.5057 17.1811 35.5198 24.2324 30.0657 30.8657C23.8736 37.9293 20.5879 47.6683 10.632 48.75C12.3923 39.2814 26.5491 0.669402 6.12609 5.22139">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class=" w-full flex flex-wrap">
+                <div class="w-full md:w-1/2 min-h-[60vh] px-4">
+                    <p class="text-amber-50 my-4">Un futur fiancé qui confie sa chaîne de communion pour un nouvel
+                        engagement, un saphir pour dire l’amour qu’il porte à l’élue de son cœur.</p>
+                    <div class="relative w-full md:w-[650px] h-[500px] overflow-hidden mt-0">
+                        <div class="parallax-bg absolute inset-0 bg-cover bg-center will-change-transform"
+                            style="background-image: url('assets/img/bg1.webp'); clip-path: inset(5% 6% 4% 5%);"></div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 min-h-[60vh] px-4">
+                    <p class="text-amber-50 mb-0">Chaque bijou raconte une de vos histoires je pars de vos mots, de vos
+                        intentions, et je les inscris dans l’éclat du métal et les délicieuses lumières des pierres que
+                        nous choisissons ensemble, une création qui n’appartient qu’à vous.</p>
+                    <div class="relative w-full md:w-[400px] h-[500px] overflow-hidden mt-0">
+                        <div class="parallax-bg absolute inset-0 bg-cover bg-center will-change-transform"
+                            style="background-image: url('assets/img/bg2.webp'); clip-path: inset(5% 6% 4% 5%);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ////////////end-of-2nd-box//// -->
+        <div>
+            <div class="bg-section" data-bg="assets/img/fbg1.webp">
+                <div class="bg-image"></div>
+                <div class="overlay-box">
+                    <div class="card">
+                        <div class="card-title"><i>Jardins</i> de <i>Jaïpur</i></div>
+                        <div class="card-subtitle">
+                            Inspiré d’un sari du XIXe siècle et d’une tenture française du XVIIIe, repensé dans un style
+                            contemporain.
+                        </div>
+
+                        <div class="carousel-section">
+                            <!-- Miniatures à gauche -->
+                            <div class="thumbnails">
+                                <img src="assets/img/11.webp" onclick="swiper.slideTo(0)">
+                                <img src="assets/img/12.webp" onclick="swiper.slideTo(1)">
+                                <img src="assets/img/13.webp" onclick="swiper.slideTo(2)">
+                            </div>
+
+                            <!-- Carousel -->
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/11.webp">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/12.webp">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/13.webp">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                        <div class="card-paragraph">
+                            Chaque pièce est conçue comme un voyage visuel entre tradition et modernité, mêlant le
+                            raffinement des motifs anciens à la simplicité des lignes contemporaines.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ////////////////////2/////////////////// -->
+            <div class="bg-section" data-bg="assets/img/fbg2.webp">
+                <div class="bg-image"></div>
+                <div class="overlay-box">
+                    <div class="card">
+                        <div class="card-title"><i>Jardins</i> de <i>Jaïpur</i></div>
+                        <div class="card-subtitle">
+                            Inspiré d’un sari du XIXe siècle et d’une tenture française du XVIIIe, repensé dans un style
+                            contemporain.
+                        </div>
+
+                        <div class="carousel-section">
+                            <!-- Miniatures à gauche -->
+                            <div class="thumbnails">
+                                <img src="https://www.veronique-et-cie.com/wp-content/uploads/2025/03/0e8f2343-f155-4ac3-adeb-5576c062f97a-AnneauJaipurPM-VP-Paris-735x430-c-center.webp"
+                                    onclick="swiper.slideTo(0)">
+                                <img src="https://www.veronique-et-cie.com/wp-content/uploads/2025/03/61eb5ef9-37b7-478d-a2d6-c8caf959fc7a-Jaipur-735x430-c-center.webp"
+                                    onclick="swiper.slideTo(1)">
+                                <img src="https://www.veronique-et-cie.com/wp-content/uploads/2025/03/5f8823e5-ac48-4be3-8913-4af75e45f5fe-bijoux-735x430-c-center.webp"
+                                    onclick="swiper.slideTo(2)">
+                            </div>
+
+                            <!-- Carousel -->
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="https://www.veronique-et-cie.com/wp-content/uploads/2025/03/0e8f2343-f155-4ac3-adeb-5576c062f97a-AnneauJaipurPM-VP-Paris-735x430-c-center.webp">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="https://www.veronique-et-cie.com/wp-content/uploads/2025/03/61eb5ef9-37b7-478d-a2d6-c8caf959fc7a-Jaipur-735x430-c-center.webp">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="https://www.veronique-et-cie.com/wp-content/uploads/2025/03/5f8823e5-ac48-4be3-8913-4af75e45f5fe-bijoux-735x430-c-center.webp">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                        <div class="card-paragraph">
+                            Chaque pièce est conçue comme un voyage visuel entre tradition et modernité, mêlant le
+                            raffinement des motifs anciens à la simplicité des lignes contemporaines.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /////////////////////3//////////////////////// -->
+            <div class="bg-section" data-bg="assets/img/fbg3.webp">
+                <div class="bg-image"></div>
+                <div class="overlay-box">
+                    <div class="card">
+                        <div class="card-title"><i>Jardins</i> de <i>Jaïpur</i></div>
+                        <div class="card-subtitle">
+                            Inspiré d’un sari du XIXe siècle et d’une tenture française du XVIIIe, repensé dans un style
+                            contemporain.
+                        </div>
+
+                        <div class="carousel-section">
+                            <!-- Miniatures à gauche -->
+                            <div class="thumbnails">
+                                <img src="assets/img/31.webp" onclick="swiper.slideTo(0)">
+                                <img src="assets/img/32.webp" onclick="swiper.slideTo(1)">
+                                <img src="assets/img/33.webp" onclick="swiper.slideTo(2)">
+                            </div>
+
+                            <!-- Carousel -->
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/31.webp">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/32.webp">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/33.webp">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                        <div class="card-paragraph">
+                            Chaque pièce est conçue comme un voyage visuel entre tradition et modernité, mêlant le
+                            raffinement des motifs anciens à la simplicité des lignes contemporaines.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- end----of----parallaxbox   -->
+        <div class="w-full min-h-[100vh] bg-[#C6805E] flex flex-wrap justify-start ">
+            <div class=" w-full h-full md:min-h-[40vh] flex flex-wrap ">
+                <h2 class="text-5xl md:text-7xl text-amber-50  italianno-regular w-full md:w-1/2 pl-3 pt-16 ">Venez dans
+                    <span class="text-[#384048]"> notre
+                        atelier</span> où vos bijoux
+                    prennent vie
+                </h2>
+                <p class="text-amber-50 text-[18px] w-full md:w-1/2 px-12 pt-20 md:pt-36">Rencontrons-nous dans mon
+                    atelier boutique du 49 rue André Bonnenfant à Saint Germain en Laye.
+
+                    Je vous y accueille au milieu de mes outils, de mes créations et d’objets qui me sont chers, dans
+                    mon univers.
+
+                    Dans ce cocon, nous donnerons ensemble forme à votre projet.</p>
+            </div>
+            <!-- end --of---text---- -->
+            <section id="workshop-section">
+                <div id="workshop" class=" w-full min-h-[40vh] flex justify-between ">
+                    <img class="workshop-gallery-item w-[18%] h-[25vh] object-cover" src="assets/img/1.webp" alt="">
+                    <img class="workshop-gallery-item w-[18%] h-[25vh] object-cover" src="assets/img/2.webp" alt="">
+                    <img class="workshop-gallery-item w-[18%] h-[25vh] object-cover" src="assets/img/3.webp" alt="">
+                    <img class="workshop-gallery-item w-[18%] h-[25vh] object-cover" src="assets/img/4.webp" alt="">
+                    <img class="workshop-gallery-item w-[18%] h-[25vh] object-cover" src="assets/img/5.webp" alt="">
+                </div>
+            </section>
+        </div>
+        <!-- /////////////end-of-last-parallax -->
+        <!-- maya---part -->
+        <section style="height: 200vh; background: rgb(198,128,94);">
+
+        </section>
+        <section class="bg-[rgb(198,128,94)] w-full min-h-[100vh] p-0 m-0">
+            <section class="parallax-container" id="parallax-section">
+                <!-- ستون تصویر -->
+                <div class="parallax-image-col">
+                    <img src="assets/img/profile.jpg" alt="تصویر من" class="parallax-image" id="my-image">
+                </div>
+                <!-- ستون متن -->
+                <div class="text-box-col">
+                    <div class="text-box">
+                        <!-- <!-متن  -->
+                        <p>Hi! I’m <strong class="text-[#384048] italianno-regular">Maya Behroozi</strong>, a passionate
+                            web developer with expertise in JavaScript, React, Next.Js and modern web technologies. I
+                            love crafting clean, efficient code and bringing creative ideas to life.</p>
+                        <p>Explore my projects and get in touch with me through the links below.</p>
+
+                        
+                        <div class="social-links">
+                            
+                            <a href="https://www.linkedin.com/in/maya-behroozi-5b27a425b" target="_blank"
+                                title="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z">
+                                    </path>
+                                </svg>
+                            </a>
+                            
+                            <a href="https://github.com/mayabehroozi" target="_blank" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                                    </path>
+                                </svg>
+                            </a>
+                            
+                            <a href="https://www.instagram.com/maya_behroozi" target="_blank" title="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--end of  maya---part -->
+
+            <!-- //////////////////////// -->
+            <div class="w-[100%] bg-[rgb(198,128,94)] ">
+                <div class="w-[50%] bg-[rgb(198,128,94)] m-0 p-0">
+                    <div class="text-box">
+                        
+                        <p>Salut ! Je suis <strong class="text-[#384048] italianno-regular">Maya Behroozi</strong>, une
+                            développeuse web passionnée spécialisée en JavaScript, React, Next.Js et technologies web
+                            modernes. J'adore créer un code propre et efficace tout en donnant vie à des idées
+                            créatives.</p>
+                        <p>Découvrez mes projets et contactez-moi via les liens ci-dessous.</p>
+
+                        
+                        <div class="social-links">
+                            
+                            <a href="https://www.linkedin.com/in/maya-behroozi-5b27a425b" target="_blank"
+                                title="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/mayabehroozi" target="_blank" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                                    </path>
+                                </svg>
+                            </a>
+                            
+                            <a href="https://www.instagram.com/maya_behroozi" target="_blank" title="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- footer--- -->
+             <div class="footer">
+                
+    <div class="w-full flex justify-center items-center footer-content">
+        <div class="w-1/2">
+            <p class="text-amber-50 text-5xl italianno-regular">
+                49 rue André Bonnenfant 78100 <br>Saint Germain en Laye
+            </p>
+            <div class="flex justify-center">
+               
+                <svg role="img" aria-label="Logo" class="header-logo-inner" xmlns="http://www.w3.org/2000/svg"
+                            width="95" height="75" viewBox="0 0 80 65" fill="none">
+                            <path
+                                d="M62.5248 62.5C61.6441 62.5 60.9415 62.2992 60.417 61.8975C59.8989 61.4893 59.5946 60.916 59.5039 60.1774H60.7181C60.7764 60.605 60.9674 60.9386 61.2912 61.1784C61.615 61.4116 62.0392 61.5282 62.5637 61.5282C62.9976 61.5282 63.3278 61.4505 63.5545 61.295C63.7876 61.133 63.9042 60.9095 63.9042 60.6244C63.9042 60.3717 63.8329 60.1676 63.6905 60.0122C63.548 59.8567 63.3084 59.7303 62.9717 59.6331L61.7089 59.2541C61.0678 59.0598 60.5951 58.8038 60.2907 58.4864C59.9928 58.1689 59.8439 57.7705 59.8439 57.291C59.8439 56.8893 59.9475 56.5395 60.1547 56.2414C60.3619 55.9434 60.6534 55.7134 61.0289 55.5514C61.411 55.3895 61.8546 55.3085 62.3597 55.3085C63.1368 55.3085 63.7552 55.4996 64.215 55.8819C64.6813 56.2576 64.9468 56.7695 65.0115 57.4174H63.7973C63.7261 57.0286 63.5642 56.7435 63.3117 56.5621C63.0591 56.3743 62.7191 56.2803 62.2917 56.2803C61.9161 56.2803 61.6182 56.3548 61.3981 56.5038C61.1779 56.6528 61.0678 56.8569 61.0678 57.1161C61.0678 57.3299 61.1326 57.5113 61.2621 57.6603C61.3981 57.8093 61.6474 57.9389 62.01 58.049L63.2922 58.4378C63.9333 58.6257 64.3996 58.8816 64.691 59.2055C64.9824 59.5295 65.1281 59.9409 65.1281 60.4398C65.1281 61.1006 64.8982 61.6092 64.4384 61.9655C63.9851 62.3219 63.3473 62.5 62.5248 62.5Z"
+                                fill="white"></path>
+                            <path d="M51.5205 62.4126V55.4154H52.7833V62.4126H51.5205Z" fill="white"></path>
+                            <path
+                                d="M39.2129 62.4126V55.4154H42.1658C42.6645 55.4154 43.0983 55.4996 43.4675 55.6681C43.8366 55.8365 44.1183 56.073 44.3125 56.3775C44.5133 56.682 44.6137 57.0384 44.6137 57.4465C44.6137 57.8482 44.5133 58.2013 44.3125 58.5058C44.1183 58.8103 43.8366 59.0468 43.4675 59.2153C43.0983 59.3837 42.6645 59.468 42.1658 59.468H40.2037V58.5058H42.127C42.5349 58.5058 42.8458 58.4119 43.0595 58.224C43.2797 58.0361 43.3898 57.777 43.3898 57.4465C43.3898 57.1161 43.2829 56.8634 43.0692 56.6885C42.8555 56.5071 42.5414 56.4164 42.127 56.4164H40.4757V62.4126H39.2129ZM43.2149 62.4126L40.0968 58.8363H41.515L44.9634 62.4126H43.2149Z"
+                                fill="white"></path>
+                            <path
+                                d="M26.1016 62.4126L28.6757 55.4154H29.7636L27.3449 62.4126H26.1016ZM31.3761 62.4126L28.9671 55.4154H30.1133L32.6777 62.4126H31.3761ZM27.4323 59.6623H31.2595V60.673H27.4323V59.6623Z"
+                                fill="white"></path>
+                            <path
+                                d="M14.9219 62.4126V55.4154H18.0594C18.571 55.4154 19.0081 55.5029 19.3707 55.6778C19.7398 55.8527 20.0215 56.0989 20.2158 56.4164C20.4166 56.7339 20.5169 57.1096 20.5169 57.5437C20.5169 57.9713 20.4166 58.3471 20.2158 58.6711C20.0151 58.995 19.7334 59.2477 19.3707 59.4291C19.0081 59.604 18.571 59.6915 18.0594 59.6915H15.903V58.7002H18.0011C18.4026 58.7002 18.7102 58.5965 18.9239 58.3892C19.1441 58.1819 19.2542 57.9001 19.2542 57.5437C19.2542 57.1939 19.1441 56.9185 18.9239 56.7177C18.7102 56.5168 18.4026 56.4164 18.0011 56.4164H16.1846V62.4126H14.9219Z"
+                                fill="white"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 7.79852C27.9384 -10.6962 25.1433 25.3673 19.4295 42.7148C30.0203 27.9936 40.9162 9.39643 58.841 2.90647C66.8511 -0.137745 81.2923 -2.96071 79.9071 6.41777C79.6556 8.11401 78.9342 9.69962 77.9324 11.0927C71.761 19.6763 57.9752 28.7803 47.8379 27.1045C56.4994 23.794 67.0489 17.2876 72.1403 8.72039C74.5066 2.94744 69.7203 2.52543 64.6249 3.42682C58.4782 4.51667 52.8138 7.3929 48.1018 11.4696C41.5057 17.1811 35.5198 24.2324 30.0657 30.8657C23.8736 37.9293 20.5879 47.6683 10.632 48.75C12.3923 39.2814 26.5491 0.669402 6.12609 5.22139"
+                                fill="white"></path>
+                        </svg>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+
+            <!-- end- of-footer--- -->
+    </body>
+    <script src="assets/js/master.js"></script>
+
+</html>
+

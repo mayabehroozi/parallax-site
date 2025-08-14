@@ -1,0 +1,347 @@
+*{margin: 0; 
+    box-sizing: border-box; 
+    padding: 0;}
+
+
+@import "tailwindcss";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Italianno&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.italianno-regular {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+  .bg-slide {
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+  }
+
+  .thumb {
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+  }
+
+  .thumb.active {
+    border-color: rgb(230, 230, 230);
+  }
+
+.br{
+    border: 2px solid red;
+}
+
+/* <!-- end-of---header///// --> */
+
+    /* ////////////2nd-box//// */
+
+    /* ////////////end-of-2nd-box//// */
+
+    /* paralax---section */
+      /* استایل سکشن */
+  .bg-section {
+    height: 250vh;
+    position: relative;
+  }
+
+  .bg-image {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+
+  .overlay-box {
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(166, 8, 8, 0);
+    padding: 2rem 3rem;
+    /* border-radius: 10px; */
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.4s ease;
+    max-width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .next-section {
+    height: 100vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+/* //////////////parallax --- card----////// */
+.card {
+    background: white;
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width:700px;
+    height: 600px;
+    padding: 20px;
+    text-align: left;
+  }
+ 
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #c6805e;
+  }
+  .card-subtitle {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  .carousel-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .swiper {
+    flex: 1;
+    height: 250px;
+    /* border-radius: 10px; */
+    overflow: hidden;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100px;
+    order: -1; /* بیاره سمت چپ */
+  }
+  .thumbnails img {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 0; /* بدون لبه گرد */
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .thumbnails img:hover {
+    transform: scale(1.05);
+  }
+  .card-paragraph {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  /* end-of-parallax-section */
+
+/* // last-parallax---/ */
+/* 
+ section {
+    height: 100vh;
+    padding:  20px;
+    box-sizing: border-box;
+
+  } */
+section {
+        height: 100vh;
+        padding:  0; /* Changed to 0 */
+        box-sizing: border-box;
+    }
+    
+  #workshop-section {
+    position: relative;
+    width: 100%;
+    
+  }
+
+  #workshop {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+  }
+
+  .workshop-gallery-item {
+    width: 270px;
+    height: 180px;
+    flex-shrink: 0;
+   
+  }
+
+  .workshop-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* کلون تصویر زوم شده */
+  .zoom-clone {
+    position: fixed;
+    object-fit: cover;
+    z-index: 9999;
+    pointer-events: none;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    will-change: left, top, width, height, opacity;
+    transition: border-radius 200ms ease;
+  }
+  .zoom-clone.zoomed {
+    border-radius: 0;
+  }
+
+  /* overlay متن */
+  .zoom-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    pointer-events: none;
+  }
+
+  .zoom-overlay-inner {
+    /* background: rgba(0,0,0,0.36); */
+    color: white;
+    border-radius: 12px;
+    max-width: 86%;
+    padding: 28px;
+    text-align: center;
+    font-family: inherit;
+  }
+
+  .overlay-text {
+    opacity: 0;
+    font-size: 80px;
+    transform: translateY(40px);
+    transition: opacity 400ms ease, transform 400ms ease;
+    margin: 8px 0;
+  }
+/* //end-of- last-parallax---/ */
+/* maya part--- */
+ .parallax-container {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            padding: 100px 5%;
+            overflow: hidden;
+            background-color: #C6805E;
+        }
+
+        /* --- ستون تصویر پارالاکس --- */
+        .parallax-image-col {
+            flex: 1;
+            position: relative;
+            height: 80vh;
+        }
+
+        .parallax-image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 120%;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- ستون کادر متنی --- */
+        .text-box-col {
+            flex: 1;
+            padding: 0 40px;
+            z-index: 2;
+           
+            direction: ltr;
+        }
+
+        .text-box {
+            background-color: #C6805E;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .text-box h2 {
+            font-size: 2.2rem;
+            margin-top: 0;
+            color: #1a2533;
+        }
+
+        .text-box p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #ffffff;
+        }
+        
+        /* --- استایل لینک‌های اجتماعی --- */
+        .social-links {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 20px;
+            color: #333;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .social-links a:last-child {
+            margin-right: 0;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.15);
+            color: #1a2533; }
+        
+        .social-links svg {
+            width: 28px;
+            height: 28px;
+        }
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+/*end of  maya part--- */
+/* foooteeeer */
+
+
+.footer {
+    background-image: url(../img/footer.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-content {
+    transition: transform 0.2s ease-out;
+}
+
+/* end  of  foooteeeer */
