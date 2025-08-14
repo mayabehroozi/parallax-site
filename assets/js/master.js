@@ -1,20 +1,18 @@
 const images = [
   {
-    url: "./parallax-site/assets/img/1web.webp",
-    thumb: "./parallax-site/assets/img/1icon.webp",
-   
+    url: "/parallax-site/assets/img/1web.webp",
+    thumb: "/parallax-site/assets/img/1icon.webp",
   },
   {
-    url: "./parallax-site/assets/img/2web.webp",
-    thumb: "./parallax-site/assets/img/2icon.webp",
-    
+    url: "/parallax-site/assets/img/2web.webp",
+    thumb: "/parallax-site/assets/img/2icon.webp",
   },
   {
-    url: "./parallax-site/assets/img/3web.webp",
-    thumb: "./parallax-site/assets/img/3icon.webp",
-   
+    url: "/parallax-site/assets/img/3web.webp",
+    thumb: "/parallax-site/assets/img/3icon.webp",
   }
 ];
+
 
 const carousel = document.getElementById("carousel");
 const thumbnailsContainer = document.getElementById("thumbnails");
